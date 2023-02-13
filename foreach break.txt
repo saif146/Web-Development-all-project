@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>JavaScript uses names to access object properties.</p>
+<p id="demo"></p>
+
+<script>
+var animals=["pig", "lion", "boar", "rabbit"];
+  
+try {
+    animals.forEach(myFunction);
+  
+    function myFunction(item) {
+  
+        // Condition for breaking the loop
+        if(item.localeCompare("rabbit") == 0){
+        throw new Exception("Time to end the loop"); 
+        }
+  
+        /* skips rest of the statements in the
+        function and goes to the catch block */
+        
+        console.log(item);
+    }
+}
+catch(e) {
+    console.log("Loop has ended");
+}
+</script>
+
+</body>
+</html>
+

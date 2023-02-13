@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  @media only screen and (max-width: 992px) {
+  .sa-1{
+  height:20%;
+  }
+    .sa-2{
+  height:20%;
+  }
+    .sa-3{
+  height:60%;
+  }
+
+  }
+  
+   .first-slide{
+
+  animation: example 20s linear 2s infinite;
+  left:1000px;
+
+  }
+    
+   .second-slide{
+
+  animation: example1 20s linear 2s infinite;
+  left:1000px;
+
+  }
+    @keyframes example {
+  0%{
+  top:0;
+  left:1000px;
+  }
+  10%{
+  top:0;
+  left:0px;
+  }
+  40%{
+  top:0;
+  left:0px;
+  }
+  50%{
+  top:0;
+  left:-1000px;
+  }
+  100%{
+    top:0;
+  left:-1000px
+  }
+ 
+}
+
+@keyframes example1 {
+  0%{
+  top:0;
+  left:1500px;
+  }
+
+  40%{
+  top:0;
+  left:1500px;
+  }
+  50%{
+  top:0;
+  left:0px;
+  }
+  90%{
+    top:0;
+  left:0px
+  }
+  100%{
+  top:0;
+  left:-1000px
+  }
+ 
+}
+.first-slide:hover{
+overflow:auto;
+}
+.second-slide:hover{
+overflow:auto;
+}
+
+  </style>
+</head>
+<body>
+
+
+
+  <div class="container-fluid"style="height:450px;">
+    <div class="row "style="height:100%;">
+      <div class="sa-1 col-lg-2  bg-primary text-white p-2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="sa-2 col-lg-2  bg-danger text-white p-2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      
+      <div class="sa-3 col-lg-8 bg-dark text-black g-0 ">
+     <div class="row h-100  g-0">
+      <div class="col-12 h-100 overflow-hidden position-relative g-0">
+     <div class="row  first-slide d-flex flex-wrap justify-content-evenly gap-2  h-100 position-absolute w-100  g-0 p-2" style="left:;">
+      <div class="card " style="width:200px">
+    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe1</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <div class="card" style="width:200px">
+    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe1</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+    <div class="card" style="width:200px">
+    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe1</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+     </div>
+     
+     <div class="row second-slide d-flex flex-wrap justify-content-evenly gap-2  h-100 position-absolute w-100  g-0 p-2" style="left:;">
+      <div class="card" style="width:200px">
+    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe2</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <div class="card" style="width:200px">
+    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe1</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+    <div class="card" style="width:200px">
+    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe1</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+     </div>
+      </div>
+  </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+----no search
+
+const int_array=[1,2,3,4,5,6,7,8,9];
+function myFunction(){
+	let age =parseInt(document.getElementById("age").value);
+	if(int_array.includes(age)){
+		document.getElementById("demo").innerHTML ="Found";
+	}else{
+		document.getElementById("demo").innerHTML ="No Found";
+	}
+	
+}         
+--string search
+const int_array=["kamal","jamal","rahim"];
+function myFunction(){
+	//let age =parseInt(document.getElementById("age").value);
+	let age = document.getElementById("age").value;
+	if(int_array.includes(age)){
+		document.getElementById("demo").innerHTML ="Found";
+	}else{
+		document.getElementById("demo").innerHTML ="No Found";
+	}
+	
+} 
+
+
+
+
+
+
+const int_array=["kamal","jamal","rahim"];
+function myFunction(){
+	//let age =parseInt(document.getElementById("age").value);
+	let age = document.getElementById("age").value;
+   int_array.forEach(find_index);
+	function find_index(value,index){
+		if(value===age){
+       document.getElementById("demo").innerHTML =value+" "+`Index is $(index)`;
+		}else{
+       document.getElementById("demo").innerHTML ="Not Found";
+		}
+	}
+	
+}
+
+
+
+const array=["kamal","jamal","rahim"];
+function myFunction(){
+	//let age =parseInt(document.getElementById("age").value);
+	let age = document.getElementById("age").value;
+        array.forEach(find_index);
+	
+	
+}
+function find_index(value,index){
+		if(value==age){
+       document.getElementById("demo").innerHTML =value+" "+`Index is $(index)`;
+		}else{
+       document.getElementById("demo").innerHTML ="Not Found";
+		}
+	}
+
+
+
+
+-last------------------
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="age" value="" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+const array=["kamal","jamal","rahim"];
+function myFunction(){
+	
+    array.forEach(find_index);
+
+}
+
+function find_index(value,index,array){
+        let age = document.getElementById("age").value;
+		if(array.includes(age)){
+       document.getElementById("demo").innerHTML ="find";
+		}else{
+       document.getElementById("demo").innerHTML ="Not Found";
+		}
+	}
+</script>
+
+</body>
+</html>
+-------------------last one-------------
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="age" value="" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+const array=["kamal","jamal","rahim"];
+function myFunction(){
+	
+    array.forEach(find_index);
+
+}
+
+function find_index(value,index,array){
+        let age = document.getElementById("age").value;
+		if(array.includes(age)){
+       document.getElementById("demo").innerHTML =age;
+		}else{
+       document.getElementById("demo").innerHTML ="Not Found";
+		}
+	}
+</script>
+
+</body>
+</html>
+
+                                                                                                                                                                                                                                                                                                                                                                                

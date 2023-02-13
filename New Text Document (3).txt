@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.forEach()</h2>
+<p>Calls a function once for each array element.</p>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["Saab", "Volvo", "BMW"];
+
+let saif="Volvo";
+cars.forEach(myFunction);
+
+
+function myFunction(value, index, array) {
+   if(value===saif){
+    console.log("Find");
+   }else{
+   console.log("N Find");
+   }
+  
+}
+</script>
+
+</body>
+</html>

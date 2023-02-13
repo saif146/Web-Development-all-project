@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.boss{
+width:100%;
+
+height:500px;
+display:flex;
+position:relative;
+
+}
+.c1{
+width:60%;
+height:100%;
+
+z-index:3;
+color:white;
+position:relative;
+display:grid;
+place-items:center;
+}
+.c2{
+
+width:40%;
+height:100%;
+
+z-index:3;
+
+
+}
+.boss::before{
+content:"";
+top:0;
+left:0;
+width:100%;
+height:100%;
+position:absolute;
+background-color:blue;
+clip-path: polygon(0% 0%, 46% 0%, 100% 100%, 0% 100%);
+
+}
+.boss::after{
+content:"";
+top:0;
+left:0;
+width:100%;
+height:100%;
+position:absolute;
+background-color:red;
+clip-path: polygon(46% 0, 100% 0%, 100% 100%, 100% 100%);
+
+
+}
+
+.image{
+position:absolute;
+right:-130px;
+top:10px;
+}
+</style>
+</head>
+
+<body>
+<div class="boss">
+<div class="child c1">
+<h1>Messi</h1>
+<div class="image">
+<img src="https://www.pngmart.com/files/2/Lionel-Messi-PNG-Image.png" alt="Girl in a jacket" width="300" height="400">
+</div>
+</div>
+<div class="child c2">
+
+
+
+</div>
+
+</div>
+
+</body>
+</html>

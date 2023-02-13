@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="age" value="" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const array=["kamal","jamal","rahim","daiyan","jeba","asif","reza"];
+function find_index(value,index,array){
+        let a,b;
+        let age = document.getElementById("age").value;
+        if(array.includes(age)){
+         a=age;
+         b=array.indexOf(age); 
+         document.getElementById("demo").innerHTML =`His name is ${a} and His id no is ${b}`;
+        }else{
+         document.getElementById("demo").innerHTML ="Not Found";
+        }
+
+	}
+
+function myFunction(){
+	
+    array.forEach(find_index);
+
+}
+
+
+</script>
+
+</body>
+</html>
